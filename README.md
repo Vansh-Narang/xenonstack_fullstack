@@ -35,9 +35,9 @@ To get a local copy up and running, follow these steps:
 cd frontend
 npm install
 
-# For backend
-cd backend
-npm install
+   # For backend
+   cd backend
+   npm install
 
 4. If env file not exist Create a .env file in the server directory and add necessary env variables in it.
 
