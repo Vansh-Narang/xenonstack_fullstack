@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://xenonstack-fullstack.vercel.app'], // Add any other origins you need
+    origin: "*", // Add any other origins you need
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the HTTP methods you want to allow
     credentials: true
 }));
