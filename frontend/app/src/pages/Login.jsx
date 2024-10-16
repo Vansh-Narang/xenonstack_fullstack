@@ -13,7 +13,7 @@ const Login = ({ onLogin }) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+            const response = await axios.post('https://xenonstack-fullstack.vercel.app/api/auth/login', { email, password });
             const { token } = response.data;
             localStorage.setItem('token', token);
             onLogin(); // Call the onLogin function to update the authentication state
